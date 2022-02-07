@@ -84,5 +84,12 @@ RSpec.describe Frame do
         expect(frame.spare?).to eq(false)
       end
     end
+
+    context "確認" do
+      let(:frame){ Frame.new('2', '6') }
+      it "falseになること" do
+        expect(frame.spare?).to eq(false)
+      end
+    end
   end
 end
